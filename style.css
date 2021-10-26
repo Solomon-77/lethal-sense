@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    background: #161616;
+}
+.home{
+    background-image: url(img/valo-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.home header{
+    background: rgba(0,0,0,0.2);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    color: white;
+    z-index: 1;
+}
+.home header ul{
+    display: flex;
+    list-style: none;
+}
+.home header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.home header ul li a:hover{
+    background: red;
+    outline: 1px solid white;
+}
+.home .menubar{
+    background-color: rgb(29, 28, 28, 0.9);
+    position: fixed;
+    height: 100%;
+    width: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+.home .menubar .close{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+.home .menubar .close:hover{
+    color: crimson;
+}
+.home .menubar ul li{
+    list-style: none;
+    margin: 30px 0 35px 25px;
+}
+.home .menubar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px 13px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.home .menubar ul li a:hover{
+    background: crimson;
+    letter-spacing: 3px;
+}
+.home .text{
+    position: absolute;
+    color: white;
+    margin: 11rem 80px;
+    margin-right: 63%;
+}
+.home .text h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.home .text p{
+    margin-bottom: 50px;
+    font-size: 19px;
+}
+.home .text a{
+    text-decoration: none;
+    color: white;
+    background: red;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: 0.2s;
+}
+.home .text a:hover{
+    transform: translateX(7%);
+    letter-spacing: 3px;
+}
+.features{
+    background: #202020;
+    padding: 40px 80px 0 80px;
+    color: white;
+    text-align: center;
+    font-size: 19px;
+}
+.features h1{
+    margin-bottom: 30px;
+}
+.features .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+.features .flex .box{
+    background: white;
+    height: 350px;
+    width: 350px;
+    padding-top: 95px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.features .flex .box:hover{
+    border-radius: 20px;
+    transform: translateY(-14px) scale(1.03);
+    box-shadow: 0 1.8rem 1.6rem rgba(0, 0, 0, 0.7);
+}
+.features .flex .box img{
+    max-width: 120px;
+}
+.features .flex .box p{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.footer{
+    background: #101010;
+    color: white;
+    padding: 25px 80px;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background: #101010;
+}
+::-webkit-scrollbar-thumb{
+    background: crimson;
+    border-radius: 20px;
+}
+@media (orientation: portrait) and (max-width: 769px){
+    .home header{
+        padding: 0 20px;
+    }
+    .home header ul li a{
+        margin-right: 10px;
+    }
+    .home .text{
+        margin: 7rem 25px;
+    }
+    .home .text h1{
+        font-size: 40px;
+    }
+    .home .text p{
+        background: rgba(37, 37, 37, 0.9);
+        border-radius: 10px;
+        margin-bottom: 13rem;
+        padding: 12px 20px;
+        box-shadow: 4px 10px 22px black;
+    }
+    .features{
+        padding: 40px 30px 0 30px;
+    }
+    .features .flex{
+        flex-direction: column;
+        padding: 50px 0 0 0;
+    }
+    .features .flex .box{
+        margin-bottom: 60px;
+        height: 300px;
+        width: 300px;
+        padding-top: 70px;
+    }
+    .footer{
+        padding: 25px 25px;
+    }
+}
+@media (orientation: landscape) and (max-width: 1024px){
+    .home header{
+        padding: 0 20px;
+    }
+    .home header ul li a{
+        margin-right: 10px;
+    }
+    .home .text{
+        margin: 4.5rem 25px;
+    }
+    .home .text h1{
+        font-size: 40px;
+    }
+    .home .text p{
+        background: rgba(37, 37, 37, 0.9);
+        border-radius: 10px;
+        margin-bottom: 6.5rem;
+        padding: 12px 20px;
+        box-shadow: 4px 10px 22px black;
+    }
+    .features{
+        padding: 40px 30px 0 30px;
+    }
+    .features .flex{
+        flex-direction: column;
+        padding: 50px 0 0 0;
+    }
+    .features .flex .box{
+        margin-bottom: 60px;
+        height: 300px;
+        width: 300px;
+        padding-top: 70px;
+    }
+    .footer{
+        padding: 25px 25px;
+    }
+}
