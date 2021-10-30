@@ -183,8 +183,8 @@ html {
         padding: 12px 20px;
         box-shadow: 4px 10px 22px black;
     }
-    .features {
-        padding: 40px 30px 0 30px;
+    .features p {
+        margin: 0 40px; 
     }
     .features .flex {
         flex-direction: column;
@@ -220,8 +220,8 @@ html {
         padding: 12px 20px;
         box-shadow: 4px 10px 22px black;
     }
-    .features {
-        padding: 40px 30px 0 30px;
+    .features p {
+        margin: 0 40px; 
     }
     .features .flex {
         flex-direction: column;
